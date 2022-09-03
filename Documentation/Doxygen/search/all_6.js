@@ -1,0 +1,26 @@
+var searchData=
+[
+  ['gamecontrol_33',['GameControl',['../class_g_w_1_1_u_i_1_1_game_control.html#a0952d92668b696a91c4d5550988b46e4',1,'GW.UI.GameControl.GameControl()'],['../class_g_w_1_1_u_i_1_1_game_control.html',1,'GW.UI.GameControl']]],
+  ['gameitem_34',['GameItem',['../class_g_w_1_1_game_model_1_1_game_item.html',1,'GW::GameModel']]],
+  ['gamelogic_35',['GameLogic',['../namespace_g_w_1_1_game_logic.html',1,'GW']]],
+  ['gamelogictests_36',['GameLogicTests',['../namespace_g_w_1_1_game_logic_tests.html',1,'GW']]],
+  ['gamemodel_37',['GameModel',['../namespace_g_w_1_1_game_model.html',1,'GW']]],
+  ['gamerenderer_38',['GameRenderer',['../namespace_g_w_1_1_game_renderer.html',1,'GW']]],
+  ['gamerepository_39',['GameRepository',['../namespace_g_w_1_1_game_repository.html',1,'GW']]],
+  ['gamestatus_40',['GameStatus',['../class_g_w_1_1_game_model_1_1_model.html#aefe3c950541e50859af32cfef536fd5d',1,'GW.GameModel.Model.GameStatus()'],['../interface_g_w_1_1_game_model_1_1_i_game_model.html#a0d43c8ef2587b5c2fbc3705f70298798',1,'GW.GameModel.IGameModel.GameStatus()']]],
+  ['generatedinternaltypehelper_41',['GeneratedInternalTypeHelper',['../class_xaml_generated_namespace_1_1_generated_internal_type_helper.html',1,'XamlGeneratedNamespace']]],
+  ['getallsaves_42',['GetAllSaves',['../interface_g_w_1_1_game_repository_1_1_i_storage_repository.html#ad8d12c805b51b31ad3daa6e9f8ef2f6b',1,'GW.GameRepository.IStorageRepository.GetAllSaves()'],['../class_g_w_1_1_game_repository_1_1_repository.html#aed4374e706ecb8dbeb47d62782b0802f',1,'GW.GameRepository.Repository.GetAllSaves()']]],
+  ['getallscores_43',['GetAllScores',['../class_g_w_1_1_game_repository_1_1_repository.html#a08e37b481c44829acec6bc0729d7a941',1,'GW.GameRepository.Repository.GetAllScores()'],['../interface_g_w_1_1_game_repository_1_1_i_storage_repository.html#a0e3e0ef0f2d59c998efba8cce0677165',1,'GW.GameRepository.IStorageRepository.GetAllScores()']]],
+  ['getheight_44',['GetHeight',['../interface_g_w_1_1_game_model_1_1_i_game_model.html#a2d29cde2ffc4b2a9adea02b580a9f824',1,'GW.GameModel.IGameModel.GetHeight()'],['../class_g_w_1_1_game_model_1_1_model.html#a2f98bb57022667e19a186234f8a5a9c8',1,'GW.GameModel.Model.GetHeight()']]],
+  ['getid_45',['GetID',['../interface_g_w_1_1_game_model_1_1_i_game_model.html#a2fc3fdb9af0e8fa96774b091c187e31f',1,'GW.GameModel.IGameModel.GetID()'],['../class_g_w_1_1_game_model_1_1_model.html#a3e0342561182dd02f0d86ebe910cee09',1,'GW.GameModel.Model.GetID()']]],
+  ['getimage_46',['GetImage',['../interface_g_w_1_1_game_model_1_1_i_game_model.html#addefca0ab434baf203df5283afda1bd9',1,'GW.GameModel.IGameModel.GetImage()'],['../class_g_w_1_1_game_model_1_1_model.html#afc643a9477aa4a04e773fb385f595218',1,'GW.GameModel.Model.GetImage()']]],
+  ['getmodel_47',['GetModel',['../class_g_w_1_1_game_logic_1_1_g_w_logic.html#a390f8c052f05b3ac7d5927a06ad5e98e',1,'GW.GameLogic.GWLogic.GetModel()'],['../interface_g_w_1_1_game_logic_1_1_i_game_logic.html#a8fd60e3a89a1422c7b1ec7f3cc35eb58',1,'GW.GameLogic.IGameLogic.GetModel()']]],
+  ['getpropertyvalue_48',['GetPropertyValue',['../class_xaml_generated_namespace_1_1_generated_internal_type_helper.html#afdc9fe15b56607d02082908d934480c6',1,'XamlGeneratedNamespace::GeneratedInternalTypeHelper']]],
+  ['getscore_49',['GetScore',['../interface_g_w_1_1_game_model_1_1_i_game_model.html#ab925b15c8dd84f57f48d2b614e197028',1,'GW.GameModel.IGameModel.GetScore()'],['../class_g_w_1_1_game_model_1_1_model.html#a04d14ccd3e6c55e55eefe393c0538e38',1,'GW.GameModel.Model.GetScore()']]],
+  ['getstoragerepository_50',['GetStorageRepository',['../class_g_w_1_1_game_logic_1_1_g_w_logic.html#a3932cb57e5f1db7103dafb249ea66539',1,'GW.GameLogic.GWLogic.GetStorageRepository()'],['../interface_g_w_1_1_game_logic_1_1_i_game_logic.html#ad015d1896df3da3b63adcb6c6b2da371',1,'GW.GameLogic.IGameLogic.GetStorageRepository()']]],
+  ['getwidth_51',['GetWidth',['../interface_g_w_1_1_game_model_1_1_i_game_model.html#a8982c67ad00dfd1a0e8b8404bedcf2e7',1,'GW.GameModel.IGameModel.GetWidth()'],['../class_g_w_1_1_game_model_1_1_model.html#af8d0c1696f4cc643ae46f03988c4a4aa',1,'GW.GameModel.Model.GetWidth()']]],
+  ['gunboat_52',['Gunboat',['../namespace_g_w_1_1_game_model.html#acbe08e6e0ab9d9e639b9934356570ab1a83c190f06a29c31b980b8b52f5746bd7',1,'GW::GameModel']]],
+  ['gw_53',['GW',['../namespace_g_w.html',1,'']]],
+  ['gwlogic_54',['GWLogic',['../class_g_w_1_1_game_logic_1_1_g_w_logic.html',1,'GW.GameLogic.GWLogic'],['../class_g_w_1_1_game_logic_1_1_g_w_logic.html#a15050e445b7b56a93e69b78764345130',1,'GW.GameLogic.GWLogic.GWLogic()']]],
+  ['ui_55',['UI',['../namespace_g_w_1_1_u_i.html',1,'GW']]]
+];

@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>GW.UI</name>
+    </assembly>
+    <members>
+        <member name="T:GW.UI.App">
+            <summary>
+            Interaction logic for App.xaml.
+            </summary>
+            <summary>
+            App
+            </summary>
+        </member>
+        <member name="M:GW.UI.App.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="M:GW.UI.App.Main">
+            <summary>
+            Application Entry Point.
+            </summary>
+        </member>
+        <member name="T:GW.UI.GameControl">
+            <summary>
+            GameControl.
+            </summary>
+        </member>
+        <member name="M:GW.UI.GameControl.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:GW.UI.GameControl"/> class.
+            </summary>
+        </member>
+        <member name="M:GW.UI.GameControl.OnRender(System.Windows.Media.DrawingContext)">
+            <inheritdoc/>
+        </member>
+        <member name="T:GW.UI.MainWindow">
+            <summary>
+            Interaction logic for MainWindow.xaml.
+            </summary>
+            <summary>
+            MainWindow
+            </summary>
+        </member>
+        <member name="M:GW.UI.MainWindow.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:GW.UI.MainWindow"/> class.
+            </summary>
+        </member>
+        <member name="M:GW.UI.MainWindow.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,532 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>GW.GameModel</name>
+    </assembly>
+    <members>
+        <member name="T:GW.GameModel.Boss">
+            <summary>
+            Enemy Bosses.
+            </summary>
+        </member>
+        <member name="M:GW.GameModel.Boss.#ctor(System.String,System.Int32,System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:GW.GameModel.Boss"/> class.
+            </summary>
+            <param name="name">Name of Boss.</param>
+            <param name="cx">X position of Boss.</param>
+            <param name="cy">Y position of Boss.</param>
+        </member>
+        <member name="P:GW.GameModel.Boss.IsVisible">
+            <summary>
+            Gets or sets a value indicating whether the boss is visible.
+            </summary>
+        </member>
+        <member name="P:GW.GameModel.Boss.Damage">
+            <summary>
+            Gets or sets the damage of boss.
+            </summary>
+        </member>
+        <member name="P:GW.GameModel.Boss.HealthPoint">
+            <summary>
+            Gets or sets the healthpoint of boss.
+            </summary>
+        </member>
+        <member name="P:GW.GameModel.Boss.Name">
+            <summary>
+            Gets or sets the name of the boss.
+            </summary>
+        </member>
+        <member name="T:GW.GameModel.EnemyType">
+            <summary>
+            Types of Enemies.
+            </summary>
+        </member>
+        <member name="F:GW.GameModel.EnemyType.Cutter">
+            <summary>
+            Cutter enum.
+            </summary>
+        </member>
+        <member name="F:GW.GameModel.EnemyType.Gunboat">
+            <summary>
+            Gunboat enum.
+            </summary>
+        </member>
+        <member name="F:GW.GameModel.EnemyType.Fury">
+            <summary>
+            Fury enum.
+            </summary>
+        </member>
+        <member name="F:GW.GameModel.EnemyType.Interceptor">
+            <summary>
+            Interceptor enum.
+            </summary>
+        </member>
+        <member name="F:GW.GameModel.EnemyType.Destroyer">
+            <summary>
+            Destroyer enum.
+            </summary>
+        </member>
+        <member name="T:GW.GameModel.Enemy">
+            <summary>
+            Enemy ships.
+            </summary>
+        </member>
+        <member name="M:GW.GameModel.Enemy.#ctor(GW.GameModel.EnemyType,System.Int32,System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:GW.GameModel.Enemy"/> class.
+            </summary>
+            <param name="typeOfEnemy">Type of Enemy.</param>
+            <param name="cx">X position of enemys centre.</param>
+            <param name="cy">Y position of enemys centre.</param>
+        </member>
+        <member name="P:GW.GameModel.Enemy.IsVisible">
+            <summary>
+            Gets or sets a value indicating whether the enemy is visible.
+            </summary>
+        </member>
+        <member name="P:GW.GameModel.Enemy.TypeOfEnemy">
+            <summary>
+            Gets or sets type of enemy.
+            </summary>
+        </member>
+        <member name="P:GW.GameModel.Enemy.HealthPoint">
+            <summary>
+            Gets or sets HealthPoint of enemy.
+            </summary>
+        </member>
+        <member name="P:GW.GameModel.Enemy.Damage">
+            <summary>
+            Gets or sets damage of enemy.
+            </summary>
+        </member>
+        <member name="T:GW.GameModel.GameItem">
+            <summary>
+            Parent class of all item.
+            </summary>
+        </member>
+        <member name="P:GW.GameModel.GameItem.DX">
+            <summary>
+            Gets or sets X component of speed.
+            </summary>
+        </member>
+        <member name="P:GW.GameModel.GameItem.DY">
+            <summary>
+            Gets or sets Y component of speed.
+            </summary>
+        </member>
+        <member name="P:GW.GameModel.GameItem.Img">
+            <summary>
+            Gets or sets image to fill items.
+            </summary>
+        </member>
+        <member name="P:GW.GameModel.GameItem.CX">
+            <summary>
+            Gets or sets centre X position.
+            </summary>
+        </member>
+        <member name="P:GW.GameModel.GameItem.CY">
+            <summary>
+            Gets or sets centre Y position.
+            </summary>
+        </member>
+        <member name="P:GW.GameModel.GameItem.Area">
+            <summary>
+            Gets or sets the area of the item.
+            </summary>
+        </member>
+        <member name="M:GW.GameModel.GameItem.IsCollision(GW.GameModel.GameItem)">
+            <summary>
+            Detect Collision.
+            </summary>
+            <param name="other">The other item to detect.</param>
+            <returns>Is there a collision.</returns>
+        </member>
+        <member name="T:GW.GameModel.IGameModel">
+            <summary>
+            Base game model interface.
+            </summary>
+        </member>
+        <member name="P:GW.GameModel.IGameModel.Level">
+            <summary>
+            Gets or sets current level.
+            </summary>
+        </member>
+        <member name="P:GW.GameModel.IGameModel.Player">
+            <summary>
+            Gets or sets the player.
+            </summary>
+        </member>
+        <member name="P:GW.GameModel.IGameModel.IsSaved">
+            <summary>
+            Gets or sets a value indicating whether is saved.
+            </summary>
+        </member>
+        <member name="P:GW.GameModel.IGameModel.GameStatus">
+            <summary>
+            Gets or sets Game Status.
+            </summary>
+        </member>
+        <member name="P:GW.GameModel.IGameModel.Enemies">
+            <summary>
+            Gets enemies collection.
+            </summary>
+        </member>
+        <member name="P:GW.GameModel.IGameModel.Boss">
+            <summary>
+            Gets or sets the boss.
+            </summary>
+        </member>
+        <member name="P:GW.GameModel.IGameModel.Items">
+            <summary>
+            Gets displayed items.
+            </summary>
+        </member>
+        <member name="M:GW.GameModel.IGameModel.GetWidth">
+            <summary>
+            Gets model width.
+            </summary>
+            <returns>Model width (px).</returns>
+        </member>
+        <member name="M:GW.GameModel.IGameModel.GetHeight">
+            <summary>
+            Gets model height.
+            </summary>
+            <returns>Model height (px).</returns>
+        </member>
+        <member name="M:GW.GameModel.IGameModel.GetScore">
+            <summary>
+            Gets score value.
+            </summary>
+            <returns>Current score.</returns>
+        </member>
+        <member name="M:GW.GameModel.IGameModel.IncreaseScore(System.Double)">
+            <summary>
+            Increase the current score.
+            </summary>
+            <param name="val">Value of increase.</param>
+        </member>
+        <member name="M:GW.GameModel.IGameModel.GetID">
+            <summary>
+            Gets player ID.
+            </summary>
+            <returns>ID of player.</returns>
+        </member>
+        <member name="M:GW.GameModel.IGameModel.SetID(System.String)">
+            <summary>
+            Set the model's id.
+            </summary>
+            <param name="id">Id of model.</param>
+        </member>
+        <member name="M:GW.GameModel.IGameModel.GetImage(System.Int32)">
+            <summary>
+            Get Image from model.
+            </summary>
+            <param name="image">Image id.</param>
+            <returns>ImageBrush.</returns>
+        </member>
+        <member name="M:GW.GameModel.IGameModel.AddItem(GW.GameModel.Item)">
+            <summary>
+            Add new item to collection.
+            </summary>
+            <param name="newItem">New item.</param>
+        </member>
+        <member name="T:GW.GameModel.ItemType">
+            <summary>
+            Types of Items.
+            </summary>
+        </member>
+        <member name="F:GW.GameModel.ItemType.Crystal">
+            <summary>
+            Crystal enum.
+            </summary>
+        </member>
+        <member name="F:GW.GameModel.ItemType.Part">
+            <summary>
+            Part enum.
+            </summary>
+        </member>
+        <member name="F:GW.GameModel.ItemType.Asteroid">
+            <summary>
+            Asteroid enum.
+            </summary>
+        </member>
+        <member name="F:GW.GameModel.ItemType.BossBullet">
+            <summary>
+            Boss Bullet enum.
+            </summary>
+        </member>
+        <member name="F:GW.GameModel.ItemType.EnemyBullet">
+            <summary>
+            Enemy Bullet enum.
+            </summary>
+        </member>
+        <member name="F:GW.GameModel.ItemType.PlayerBullet">
+            <summary>
+            Player Bullet enum.
+            </summary>
+        </member>
+        <member name="F:GW.GameModel.ItemType.PlayerRay">
+            <summary>
+            Player Ray enum.
+            </summary>
+        </member>
+        <member name="T:GW.GameModel.Item">
+            <summary>
+            Dumb items.
+            </summary>
+        </member>
+        <member name="M:GW.GameModel.Item.#ctor(GW.GameModel.ItemType,System.Double,System.Double)">
+            <summary>
+            Initializes a new instance of the <see cref="T:GW.GameModel.Item"/> class.
+            </summary>
+            <param name="itemType">Type of Item.</param>
+            <param name="cx">X Position of Item Centre.</param>
+            <param name="cy">Y Position of Item Centre.</param>
+        </member>
+        <member name="P:GW.GameModel.Item.ItemType">
+            <summary>
+            Gets type of item.
+            </summary>
+        </member>
+        <member name="T:GW.GameModel.Model">
+            <summary>
+            GameModel.
+            </summary>
+        </member>
+        <member name="M:GW.GameModel.Model.#ctor(System.Int32,System.Double,GW.GameModel.Player,System.Double,System.Double,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:GW.GameModel.Model"/> class.
+            </summary>
+            <param name="level">Current level.</param>
+            <param name="score">Current score.</param>
+            <param name="player">Player with actual parameters.</param>
+            <param name="height">Height of Window.</param>
+            <param name="width">Width of Window.</param>
+            <param name="id">Id of the game.</param>
+        </member>
+        <member name="P:GW.GameModel.Model.Player">
+            <summary>
+            Gets or sets Player instance.
+            </summary>
+        </member>
+        <member name="P:GW.GameModel.Model.GameStatus">
+            <inheritdoc/>
+        </member>
+        <member name="P:GW.GameModel.Model.Boss">
+            <inheritdoc/>
+        </member>
+        <member name="P:GW.GameModel.Model.Items">
+            <inheritdoc/>
+        </member>
+        <member name="P:GW.GameModel.Model.Level">
+            <inheritdoc/>
+        </member>
+        <member name="P:GW.GameModel.Model.Enemies">
+            <inheritdoc/>
+        </member>
+        <member name="P:GW.GameModel.Model.IsSaved">
+            <inheritdoc/>
+        </member>
+        <member name="M:GW.GameModel.Model.GetImage(System.Int32)">
+            <summary>
+            Get image.
+            </summary>
+            <param name="image">id of image.</param>
+            <returns>Selected image.</returns>
+        </member>
+        <member name="M:GW.GameModel.Model.AddEnemy(GW.GameModel.Enemy)">
+            <summary>
+            Appears a new Enemy.
+            </summary>
+            <param name="newEnemy">New Enemy.</param>
+        </member>
+        <member name="M:GW.GameModel.Model.GetHeight">
+            <summary>
+            Get the Height of the Game.
+            </summary>
+            <returns>Height.</returns>
+        </member>
+        <member name="M:GW.GameModel.Model.AddItem(GW.GameModel.Item)">
+            <summary>
+            Appears a new item.
+            </summary>
+            <param name="newItem">New Item.</param>
+        </member>
+        <member name="M:GW.GameModel.Model.IncreaseScore(System.Double)">
+            <summary>
+            Increase the current score.
+            </summary>
+            <param name="val">Value of increase.</param>
+        </member>
+        <member name="M:GW.GameModel.Model.GetScore">
+            <summary>
+            Get the current score.
+            </summary>
+            <returns>Score.</returns>
+        </member>
+        <member name="M:GW.GameModel.Model.GetWidth">
+            <summary>
+            Get the Width of the Game.
+            </summary>
+            <returns>Width.</returns>
+        </member>
+        <member name="M:GW.GameModel.Model.GetID">
+            <inheritdoc/>
+        </member>
+        <member name="M:GW.GameModel.Model.SetID(System.String)">
+            <summary>
+            Set the id of the game.
+            </summary>
+            <param name="id">ID.</param>
+        </member>
+        <member name="M:GW.GameModel.Model.InitImages">
+            <summary>
+            Initialization images.
+            </summary>
+        </member>
+        <member name="T:GW.GameModel.Cannon">
+            <summary>
+            Basic weapon of player.
+            </summary>
+        </member>
+        <member name="M:GW.GameModel.Cannon.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:GW.GameModel.Cannon"/> class.
+            </summary>
+        </member>
+        <member name="M:GW.GameModel.Cannon.#ctor(System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:GW.GameModel.Cannon"/> class.
+            </summary>
+            <param name="lvl">Level of cannon.</param>
+        </member>
+        <member name="P:GW.GameModel.Cannon.Level">
+            <summary>
+            Gets or sets level of cannon.
+            </summary>
+        </member>
+        <member name="P:GW.GameModel.Cannon.Damage">
+            <summary>
+            Gets or sets damage of cannon.
+            </summary>
+        </member>
+        <member name="P:GW.GameModel.Cannon.UpgradeCost">
+            <summary>
+            Gets or sets Upgrade Cost of cannon.
+            </summary>
+        </member>
+        <member name="P:GW.GameModel.Cannon.Delay">
+            <summary>
+            Gets or sets Delay between shots.
+            </summary>
+        </member>
+        <member name="T:GW.GameModel.RayGun">
+            <summary>
+            Special player weapon.
+            </summary>
+        </member>
+        <member name="M:GW.GameModel.RayGun.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:GW.GameModel.RayGun"/> class.
+            </summary>
+        </member>
+        <member name="P:GW.GameModel.RayGun.NeededCrystalsToShot">
+            <summary>
+            Gets Needed Crystals count to shot.
+            </summary>
+        </member>
+        <member name="P:GW.GameModel.RayGun.Damage">
+            <summary>
+            Gets Damage of the shot.
+            </summary>
+        </member>
+        <member name="P:GW.GameModel.RayGun.Available">
+            <summary>
+            Gets or sets a value indicating whether raygun available property.
+            </summary>
+        </member>
+        <member name="T:GW.GameModel.Shield">
+            <summary>
+            Shield of the Player.
+            </summary>
+        </member>
+        <member name="M:GW.GameModel.Shield.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:GW.GameModel.Shield"/> class.
+            </summary>
+        </member>
+        <member name="M:GW.GameModel.Shield.#ctor(System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:GW.GameModel.Shield"/> class.
+            </summary>
+            <param name="lvl">Level of shield.</param>
+        </member>
+        <member name="P:GW.GameModel.Shield.Level">
+            <summary>
+            Gets or sets level of the shield.
+            </summary>
+        </member>
+        <member name="P:GW.GameModel.Shield.DamageReduction">
+            <summary>
+            Gets or sets Damage Reduction.
+            </summary>
+        </member>
+        <member name="P:GW.GameModel.Shield.UpgradeCost">
+            <summary>
+            Gets or sets level of the shield.
+            </summary>
+        </member>
+        <member name="P:GW.GameModel.Shield.RepairCost">
+            <summary>
+            Gets or sets level of the shield.
+            </summary>
+        </member>
+        <member name="T:GW.GameModel.Player">
+            <summary>
+            Player base class.
+            </summary>
+        </member>
+        <member name="M:GW.GameModel.Player.#ctor(System.Double,System.Double,System.Double,System.Double,System.Int32,System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:GW.GameModel.Player"/> class.
+            </summary>
+            <param name="cx">X position of player centre.</param>
+            <param name="cy">Y position of player centre.</param>
+            <param name="dx">X component of speed.</param>
+            <param name="dy">Y component of speed.</param>
+            <param name="shieldLvl">Current level of shield.</param>
+            <param name="cannonLvl">Current level of cannon.</param>
+        </member>
+        <member name="P:GW.GameModel.Player.PlayerShield">
+            <summary>
+            Gets or sets player Shield.
+            </summary>
+        </member>
+        <member name="P:GW.GameModel.Player.PlayerCannon">
+            <summary>
+            Gets or sets Player Cannon.
+            </summary>
+        </member>
+        <member name="P:GW.GameModel.Player.PlayerRayGun">
+            <summary>
+            Gets Player Raygun.
+            </summary>
+        </member>
+        <member name="P:GW.GameModel.Player.HealthPoint">
+            <summary>
+            Gets or sets HealthPoint of player.
+            </summary>
+        </member>
+        <member name="P:GW.GameModel.Player.CollectedPartsCount">
+            <summary>
+            Gets or sets collected parts count.
+            </summary>
+        </member>
+        <member name="P:GW.GameModel.Player.CollectedCrystalsCount">
+            <summary>
+            Gets or sets collected crystals count.
+            </summary>
+        </member>
+    </members>
+</doc>

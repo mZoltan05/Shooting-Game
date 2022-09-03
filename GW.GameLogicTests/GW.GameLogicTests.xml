@@ -1,0 +1,183 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>GW.GameLogicTests</name>
+    </assembly>
+    <members>
+        <member name="T:GW.GameLogicTests.LogicTests">
+            <summary>
+            Game Logic tests.
+            </summary>
+        </member>
+        <member name="M:GW.GameLogicTests.LogicTests.Init">
+            <summary>
+            This method initializes mocked dependencies and a new GWLogic.
+            </summary>
+        </member>
+        <member name="M:GW.GameLogicTests.LogicTests.MovePlayerUpOutTest">
+            <summary>
+            MovePlayer method boundary check test.
+            </summary>
+        </member>
+        <member name="M:GW.GameLogicTests.LogicTests.MovePlayerUpNormalTest">
+            <summary>
+            MovePlayer method boundary check test.
+            </summary>
+        </member>
+        <member name="M:GW.GameLogicTests.LogicTests.MovePlayerLeftOutTest">
+            <summary>
+            MovePlayer method boundary check test.
+            </summary>
+        </member>
+        <member name="M:GW.GameLogicTests.LogicTests.MovePlayerLeftNormalTest">
+            <summary>
+            MovePlayer method boundary check test.
+            </summary>
+        </member>
+        <member name="M:GW.GameLogicTests.LogicTests.MovePlayerDownOutTest">
+            <summary>
+            MovePlayer method boundary check test.
+            </summary>
+        </member>
+        <member name="M:GW.GameLogicTests.LogicTests.MovePlayerDownNormalTest">
+            <summary>
+            MovePlayer method boundary check test.
+            </summary>
+        </member>
+        <member name="M:GW.GameLogicTests.LogicTests.MovePlayerRightOutTest">
+            <summary>
+            MovePlayer method boundary check test.
+            </summary>
+        </member>
+        <member name="M:GW.GameLogicTests.LogicTests.MovePlayerRightNormalTest">
+            <summary>
+            MovePlayer method boundary check test.
+            </summary>
+        </member>
+        <member name="M:GW.GameLogicTests.LogicTests.RepairShieldLevel2NormalTest">
+            <summary>
+            RepairShield check test.
+            </summary>
+        </member>
+        <member name="M:GW.GameLogicTests.LogicTests.RepairShieldLevel2NotEnoughPartsTest">
+            <summary>
+            RepairShield check test.
+            </summary>
+        </member>
+        <member name="M:GW.GameLogicTests.LogicTests.RepairShieldLevel3NormalTest">
+            <summary>
+            RepairShield check test.
+            </summary>
+        </member>
+        <member name="M:GW.GameLogicTests.LogicTests.RepairShieldLevel3NotEnoughPartsTest">
+            <summary>
+            RepairShield check test.
+            </summary>
+        </member>
+        <member name="M:GW.GameLogicTests.LogicTests.RepairShieldLevel4NormalTest">
+            <summary>
+            RepairShield check test.
+            </summary>
+        </member>
+        <member name="M:GW.GameLogicTests.LogicTests.RepairShieldLevel4NotEnoughPartsTest">
+            <summary>
+            RepairShield check test.
+            </summary>
+        </member>
+        <member name="M:GW.GameLogicTests.LogicTests.RepairShieldLevel5NormalTest">
+            <summary>
+            RepairShield check test.
+            </summary>
+        </member>
+        <member name="M:GW.GameLogicTests.LogicTests.RepairShieldLevel5NotEnoughPartsTest">
+            <summary>
+            RepairShield check test.
+            </summary>
+        </member>
+        <member name="M:GW.GameLogicTests.LogicTests.UpgradeShieldLevel1NormalTest">
+            <summary>
+            UpgradeShield check test.
+            </summary>
+        </member>
+        <member name="M:GW.GameLogicTests.LogicTests.UpgradeShieldLevel1NotEnoughPartsTest">
+            <summary>
+            UpgradeShield check test.
+            </summary>
+        </member>
+        <member name="M:GW.GameLogicTests.LogicTests.UpgradeShieldLevel2NormalTest">
+            <summary>
+            UpgradeShield check test.
+            </summary>
+        </member>
+        <member name="M:GW.GameLogicTests.LogicTests.UpgradeShieldLevel2NotEnoughPartsTest">
+            <summary>
+            UpgradeShield check test.
+            </summary>
+        </member>
+        <member name="M:GW.GameLogicTests.LogicTests.UpgradeShieldLevel3NormalTest">
+            <summary>
+            UpgradeShield check test.
+            </summary>
+        </member>
+        <member name="M:GW.GameLogicTests.LogicTests.UpgradeShieldLevel3NotEnoughPartsTest">
+            <summary>
+            UpgradeShield check test.
+            </summary>
+        </member>
+        <member name="M:GW.GameLogicTests.LogicTests.UpgradeShieldLevel4NormalTest">
+            <summary>
+            UpgradeShield check test.
+            </summary>
+        </member>
+        <member name="M:GW.GameLogicTests.LogicTests.UpgradeShieldLevel4NotEnoughPartsTest">
+            <summary>
+            UpgradeShield check test.
+            </summary>
+        </member>
+        <member name="M:GW.GameLogicTests.LogicTests.UpgradeShieldLevel5NormalTest">
+            <summary>
+            UpgradeShield check test.
+            </summary>
+        </member>
+        <member name="M:GW.GameLogicTests.LogicTests.UpgradeCannonLevel1NormalTest">
+            <summary>
+            UpgradeCannon test.
+            </summary>
+        </member>
+        <member name="M:GW.GameLogicTests.LogicTests.UpgradeCannonLevel1NotEnoughPartsTest">
+            <summary>
+            UpgradeCannon test.
+            </summary>
+        </member>
+        <member name="M:GW.GameLogicTests.LogicTests.UpgradeCannonLevel2NormalTest">
+            <summary>
+            UpgradeCannon test.
+            </summary>
+        </member>
+        <member name="M:GW.GameLogicTests.LogicTests.UpgradeCannonLevel2NotEnoughPartsTest">
+            <summary>
+            UpgradeCannon test.
+            </summary>
+        </member>
+        <member name="M:GW.GameLogicTests.LogicTests.UpgradeCannonLevel3NormalTest">
+            <summary>
+            UpgradeCannon test.
+            </summary>
+        </member>
+        <member name="M:GW.GameLogicTests.LogicTests.ShootCannonTest">
+            <summary>
+            ShootCannon test.
+            </summary>
+        </member>
+        <member name="M:GW.GameLogicTests.LogicTests.ShootRaygunTestNormal">
+            <summary>
+            ShootRaygun test.
+            </summary>
+        </member>
+        <member name="M:GW.GameLogicTests.LogicTests.ShootRaygunTestNotEnoughCrystals">
+            <summary>
+            ShootRaygun test.
+            </summary>
+        </member>
+    </members>
+</doc>

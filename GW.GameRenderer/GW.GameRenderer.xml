@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>GW.GameRenderer</name>
+    </assembly>
+    <members>
+        <member name="T:GW.GameRenderer.Renderer">
+            <summary>
+            Game Renderer.
+            </summary>
+        </member>
+        <member name="M:GW.GameRenderer.Renderer.#ctor(GW.GameModel.IGameModel)">
+            <summary>
+            Initializes a new instance of the <see cref="T:GW.GameRenderer.Renderer"/> class.
+            </summary>
+            <param name="model">Model.</param>
+        </member>
+        <member name="M:GW.GameRenderer.Renderer.BuildDisplay(System.Windows.Media.DrawingContext,System.Int32,System.Int32,System.Collections.Generic.Dictionary{System.String,System.String},System.Collections.Generic.Dictionary{System.String,System.Int32})">
+            <summary>
+            Render.
+            </summary>
+            <param name="ctx">ctx.</param>
+            <param name="lvl">Level.</param>
+            <param name="arg2">Argument number 2.</param>
+            <param name="dict">Dict string,string.</param>
+            <param name="scores">Scores.</param>
+        </member>
+    </members>
+</doc>

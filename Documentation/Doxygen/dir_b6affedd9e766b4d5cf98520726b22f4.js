@@ -1,0 +1,5 @@
+var dir_b6affedd9e766b4d5cf98520726b22f4 =
+[
+    [ "net5.0", "dir_0764e35c255322d951794197158292f5.html", "dir_0764e35c255322d951794197158292f5" ],
+    [ "net5.0-windows", "dir_f95f61f885b510e6320e43ba15cb9233.html", "dir_f95f61f885b510e6320e43ba15cb9233" ]
+];

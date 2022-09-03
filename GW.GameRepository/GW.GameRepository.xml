@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>GW.GameRepository</name>
+    </assembly>
+    <members>
+        <member name="T:GW.GameRepository.IStorageRepository">
+            <summary>
+            Storage repository interface.
+            </summary>
+        </member>
+        <member name="M:GW.GameRepository.IStorageRepository.Load(System.String)">
+            <summary>
+            Loads game model from savefile.
+            </summary>
+            <param name="id">Player id.</param>
+            <returns>Loaded game model instance.</returns>
+        </member>
+        <member name="M:GW.GameRepository.IStorageRepository.Save(GW.GameModel.IGameModel)">
+            <summary>
+            Saves game model to savefile.
+            </summary>
+            <param name="model">Game model instance to save.</param>
+        </member>
+        <member name="M:GW.GameRepository.IStorageRepository.SaveScore(System.String,System.Double)">
+            <summary>
+            Save score.
+            </summary>
+            <param name="id">Player id.</param>
+            <param name="score">Current score.</param>
+        </member>
+        <member name="M:GW.GameRepository.IStorageRepository.Delete(System.String)">
+            <summary>
+            Deletes game in gamefile.
+            </summary>
+            <param name="id">Player id.</param>
+        </member>
+        <member name="M:GW.GameRepository.IStorageRepository.GetAllSaves">
+            <summary>
+            Gets dictionary of playerid -> gamedetail.
+            </summary>
+            <returns>Dictionary of game details, identified by playerids.</returns>
+        </member>
+        <member name="M:GW.GameRepository.IStorageRepository.GetAllScores">
+            <summary>
+            Gets collection of scores in savefile.
+            </summary>
+            <returns>Collection of all scores.</returns>
+        </member>
+        <member name="T:GW.GameRepository.Repository">
+            <summary>
+            Implement repository issues.
+            </summary>
+        </member>
+        <member name="M:GW.GameRepository.Repository.Delete(System.String)">
+            <inheritdoc/>
+        </member>
+        <member name="M:GW.GameRepository.Repository.GetAllSaves">
+            <inheritdoc/>
+        </member>
+        <member name="M:GW.GameRepository.Repository.GetAllScores">
+            <inheritdoc/>
+        </member>
+        <member name="M:GW.GameRepository.Repository.Load(System.String)">
+            <inheritdoc/>
+        </member>
+        <member name="M:GW.GameRepository.Repository.Save(GW.GameModel.IGameModel)">
+            <inheritdoc/>
+        </member>
+        <member name="M:GW.GameRepository.Repository.SaveScore(System.String,System.Double)">
+            <inheritdoc/>
+        </member>
+    </members>
+</doc>
