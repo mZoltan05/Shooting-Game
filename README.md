@@ -1,3 +1,3 @@
 # Shooting Game #
 
-We designed and developed this Shooting Game with a friend as a school project. We implemented MVC pattern in C#.
+It is a 2D Shooting Game we designed and developed this with a friend. We implemented MVC pattern in C#.
